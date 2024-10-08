@@ -94,17 +94,26 @@ abstract contract BatchScript is Script {
         if (chainId == 1) {
             SAFE_API_BASE_URL = "https://safe-transaction-mainnet.safe.global/api/v1/safes/";
             SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
+        } else if (chainId == 5) {
+            SAFE_API_BASE_URL = "https://safe-transaction-goerli.safe.global/api/v1/safes/";
+            SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
+        } else if (chainId == 11155111) {
+            SAFE_API_BASE_URL = "https://safe-transaction-sepolia.safe.global/api/v1/safes/";
+            SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
+        } else if (chainId == 10) {
+            SAFE_API_BASE_URL = "https://safe-transaction-optimism.safe.global/api/v1/safes/";
+            SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
         } else if (chainId == 56) {
             SAFE_API_BASE_URL = "https://safe-transaction-bsc.safe.global/api/v1/safes/";
             SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
         } else if (chainId == 137) {
             SAFE_API_BASE_URL = "https://safe-transaction-polygon.safe.global/api/v1/safes/";
             SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
-        } else if (chainId == 5) {
-            SAFE_API_BASE_URL = "https://safe-transaction-goerli.safe.global/api/v1/safes/";
+        } else if (chainId == 1101) {
+            SAFE_API_BASE_URL = "https://safe-transaction-zkevm.safe.global/api/v1/safes/";
             SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
-        } else if (chainId == 11155111) {
-            SAFE_API_BASE_URL = "https://safe-transaction-sepolia.safe.global/api/v1/safes/";
+        } else if (chainId == 5000) {
+            SAFE_API_BASE_URL = "https://safe-transaction-mantle.safe.global/api/v1/safes/";
             SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
         } else if (chainId == 8453) {
             SAFE_API_BASE_URL = "https://safe-transaction-base.safe.global/api/v1/safes/";
