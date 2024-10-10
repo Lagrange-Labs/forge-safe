@@ -109,6 +109,9 @@ abstract contract BatchScript is Script {
         } else if (chainId == 137) {
             SAFE_API_BASE_URL = "https://safe-transaction-polygon.safe.global/api/v1/safes/";
             SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
+        } else if (chainId == 252) {
+            SAFE_API_BASE_URL = "https://transaction-frax.safe.optimism.io/api/v1/safes/";
+            SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
         } else if (chainId == 1101) {
             SAFE_API_BASE_URL = "https://safe-transaction-zkevm.safe.global/api/v1/safes/";
             SAFE_MULTISEND_ADDRESS = 0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761;
